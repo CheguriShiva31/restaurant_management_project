@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>{%block title %}
+Restaurant{%endblock %}</title>
+<style>
+footer {text-align:center; padding:10px; background-color:#f8f8f8; border-top:1px solid #ddd; font-size:14px; margin-top:20px;}
+</style>
+</head>
+<body>
+{% block content %}
+{% endlock %}
+<footer> &copy; {{current_year }}my restaurant.all rights resverved.
+</footer>
+</body>
+</html>
