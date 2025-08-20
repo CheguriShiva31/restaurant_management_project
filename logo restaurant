@@ -14,3 +14,6 @@ p {font-size: 1.2em; color:#555;}
 <body>
 <img src="{%static 'image/logo.png' %}" alt="Restaurant Logo" class="logo">
 <h1>{{restaurant_name}}<h1>
+<p> welcome to our restaurant! enjoy delicious meals made with love.</p>
+</body>
+</html>
