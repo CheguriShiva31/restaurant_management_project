@@ -1,0 +1,13 @@
+<form id="contactform">
+<label for="name">Name:</label><br>
+<input type="text" id="name" name="  name="name"><br><br>
+<label for="email"> Email:</label><br>
+<input type="email" id="email" name="email"><br><br>
+<label for="message">  message:</label><br>
+<textarea id="message" name="message"></textarea><br><br>
+<button type="submit">send</button>
+</form>
+<script>
+document.getElementaryId("contactform").addeventlistener("submit",function (event){ let name= document.getelementbyid("name").value.trim(); let email = document.getelementbyid("email").value.trim();})
+if (name === "" || email === "") {name and email."); event.preventdefault();});
+</script>
