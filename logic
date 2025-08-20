@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>{{restaurant_name}}</title>
+<styles>
+body {font-family: Arial, sans-serif; text-align: center; padding: 20px;}
+.logo{max-width:200px; height: auto; margin-bottom: 20px;}
+h1 {font-size: 2em; margin-top: 10px;}
+</styles>
+</head>
+<body>
+<img src="{% static 'image/logo.png'%}" alt="Restaurant Logo" class="logo">
+<h1> {{restaurant_name}}</h1>
+<p>welcome to our restaurant! enjoy delicious meals made with love.</p>
+</body>
+</html>
