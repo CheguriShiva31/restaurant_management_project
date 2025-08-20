@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Restaurant Homepage</title>
+<style>
+body {font-family:Arial,sans-serif; text-align:center; margin-top:50px;}
+      .search-container {margin:20px auto; width:300px;}
+      .search-container input[type="text"] {width:80%; padding:8px; border:1px solid #ccc; border-radius:5px 0 0 5px; outline:none;}
+      .search-container button {padding:8px 12px; border:none; background-color: #4CAF50; color:pointer; border-radius: 0  5px  5px  0;}
+      .search-container button:hover {background-color:#45a049;}
+      </style>
+      </head>
+      <h1>welcome to our restaurant</h1> <p> search fpr your favorite menu items below:</p>
+      <div class="search-container">
+      <form method="GET" action="">
+      <input type="text" name="q" placeholder="search menu items..."/>
+      <button type=submit"> search</button>
+      </form>
+      </div>
+      </body>
+      </html>
