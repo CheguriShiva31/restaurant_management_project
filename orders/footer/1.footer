@@ -1,4 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf
+from django.conf import settings
+def restaurant_globals(request):
+return{"RESTAURANT_NAME":getattr(settings,"RESTAURANT_NAME","Restaurant"),}
+
+
+TEMPLATES = [{"options":{"context_processors":["yourapp.context_processors.restaurant_globals",],},},]
+
+<footer class="site-footer">
+<div class="container">
+<p>&copy="container">
+{{RESTAURANT_NAME}}.All rights resvered.</p>
+</div>
+</footer>
