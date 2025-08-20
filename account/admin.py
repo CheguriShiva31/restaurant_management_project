@@ -1,4 +1,12 @@
 from django.shortcuts import render 
-def menu_list(request):
-    menu_items = [{"name": "Margherita pizza", "price": 8.99}, {"name": "pasta Alfredo","price:10.99"}, {"name":"chocolate lava cake","price":4.99},]
-    return render(request,"menu_list.html",{"menu_items": menu_itemms})
+from django.http import HttpResponse
+from.models import menuitem
+from django.db import DatabaseError
+def menu_items_view(request):
+    try:
+        items = menuitem.objects.all()
+        return render (request, "menu.html",{"items":items})
+        except Databaseerror:
+            return HttpResponse("sorry, we're experiencing database issues. please try again later.", status=500)
+            except Exception as e:
+                return HttpResponse(f"An unexpected error occurred: {str(e)}", status=500)
