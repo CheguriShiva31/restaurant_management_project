@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurant Homepage </title>
+  <style>
+  .address-section{margin-top:30px; padding:15px; border:1px solid #ccc; border-radius:8px; background:#f9f9f9;}
+  .address-section h2{margin-bottom:10px;}
+  .map-container{margin-top:15px;}
+  </style>
+  </head>
+  <body>
+  <h1>welcome to our restaurant</h1><p> enjoy delicious food and a cozy atmosphere!</P>
+  <div class="address-section">
+  <h2>our location</h2><p> 123 main street,<br> hyderbad, telangana, india
+  </p>
+  <div class="map-container">
+  <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.4678!2d78.4747!3d!7.3850!2m3!1f0!3f0!3m2!1i102412i768!4f13.1!3m!1m2!2s0x3bcb9790d8c5f3e9%3a0x2c639b3!2shyderbad%2c%20telangana!5e0!3m2!1sen!2sin!4v1692854116011!5m2!1sen!2sin"  width="600"  height="450"  style="border:0;"   allowfullscreen=""   loading="lazy"   referrerpolicy="no-referrer-when-downg rade">
+  </iframe>
+  </div>
+  </body>
+  </html>
