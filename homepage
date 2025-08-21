@@ -1,0 +1,12 @@
+from django.shortcuts import render,redirect
+from.forms import contactform
+def home_view(request):
+if request.method == "POST":
+form = contactform(request.POST)
+if form.is_valid(): form.save()
+return redirect('contact_thanks')
+else:
+    form = contactform()
+    return render(request,'home.html',{'form':form})
+    def contact_thanks(request):
+    return render(request,'contact_thanks.html')
