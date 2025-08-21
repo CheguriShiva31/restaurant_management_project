@@ -1,0 +1,12 @@
+from django.shortcuts import render, redirect
+from.forms import feedbackform
+def feedback_view(request):
+ if request.method == "POST":
+ form = feedbackform(request.post)
+ if form.is_valid(): form.save()
+return ('feedback_thanks')
+else: 
+    form  = feedbackform()
+    return render(request,'feedback.html',{'form:form})
+    def feedback_thanks(request):
+    return render(request,'feedback_thanks.html')
