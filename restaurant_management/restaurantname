@@ -1,0 +1,8 @@
+from django.conf import settings
+from django.shortcuts import render
+from.models import Restaurant
+def home(request):
+ name = getattr(settings,"RESTAURANT_NAME",None)
+ if not name:
+ name = Restaurant.objects.values_list("name",flat=true).first() or "Our Restaurant"
+ return render(request,"home. html",{"restaurant_name":})
