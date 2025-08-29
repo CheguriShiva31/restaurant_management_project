@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Restaurant Homepage</title>
+</head>
+<body>
+<h1>Welcome to Our Restaurant</h1>
+{% if location %}
+<h3> Find us here:</h3>
+<p>
+{{location.address}}
+<br>
+{{location.city}},{{location.state}},{{location.zip_code}}
+</p>
+{% else %}
+<p> Restaurant location details are not avalible yet.</p>
+{% endif %}
+</body>
+</html>
