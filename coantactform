@@ -1,0 +1,4 @@
+from django import forms
+class ContactForm(forms.Form):
+email = forms.EmailField(label="Your Email", required=True, widget=forms.EmailInput(attrs={'placeh older':'Enter your email'}))
+message = forms.CharField(label="Message", required=True, widget=forms.Textarea(attrs={'placeholder':'Enter your message}))
