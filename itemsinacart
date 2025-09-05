@@ -1,0 +1,8 @@
+from django.shortcuts import render,redirect, get_object_or_404
+from .models import MenuItem
+def add_to_cart(request, item_id):
+item = get_object_or_404(MenuItem, id=item_id)
+cart = request.session.get('cart',{})
+cart[str(item_id)] = cart.get(str(item_id),0)+1
+request.session['cart'] = cart
+return redirect('menu')
