@@ -1,0 +1,6 @@
+from django.shortcuts import render
+from django.utils import timezone
+
+def home(request):
+current_datetime = timezone.now()
+return render(request,'index.html',{'current_datetime':})current_datetime
