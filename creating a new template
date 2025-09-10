@@ -1,0 +1,7 @@
+from django.shortcuts import render
+def faq(request):
+return render(request, 'faq.html')
+
+from django.urls import path
+from.import views
+urlpatterns = [path('faq/', views.faq, name='faq'),]
