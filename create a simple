@@ -1,0 +1,7 @@
+from django.shortcuts import render
+def about_us(request):
+return render(request,'about_us.html')
+
+from django.urls import path
+from. import views
+urlpatterns = [path('about/',views.about_us,name='about'),]
