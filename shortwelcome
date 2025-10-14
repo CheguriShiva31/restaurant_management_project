@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="restaurant-title"> Welcome to Our Restaurant</h1>
+<p class="tagline"> Delicious Flavors. Fresh Ingredients. Warm Hospitality."</p>
+<a href="{% url 'order_page' %}"
+class="order-btn">ORDER NOW</a>
+</div>
+{% endblock %}
