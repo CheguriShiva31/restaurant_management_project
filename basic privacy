@@ -1,0 +1,6 @@
+from django.shortcuts import render
+def homepage(request):
+return render(request,'homepage.html')
+def order_page(request,'order_page.html')
+def privacy_policy(request):
+return render(request,'privacy_policy.html')
